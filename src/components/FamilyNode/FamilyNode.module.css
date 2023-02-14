@@ -1,0 +1,85 @@
+.root {
+  position: absolute;
+  display: flex;
+  padding: 10px;
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+  /* flex: 1; */
+  /* align-items: center;
+  justify-content: center; */
+  /* border: 2px solid rgba(0, 0, 0, .2); */
+  border-radius: 10px 0;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.id {
+  align-self: center;
+  margin-bottom: 5px;
+  font-size: 7px;
+  line-height: 1;
+  opacity: .5;
+}
+
+.portrait {
+  /* display: block;
+  margin-left: auto;
+  margin-right: auto; */
+  width: 100%;
+}
+
+.male {
+  background: radial-gradient(rgb(164, 236, 255), rgba(255,0,0,0) 75%);
+  /* background: rgb(164, 236, 255); */
+}
+
+.female {
+  background: radial-gradient(rgb(253, 174, 216), rgba(255,0,0,0) 75%);
+  /* background: rgb(253, 174, 216); */
+}
+
+.isRoot {
+  /* border-color: rgba(0, 0, 0, .4); */
+}
+
+.isHover {
+  border-color: rgba(0, 0, 0, .4);
+}
+
+.sub {
+  position: absolute;
+  top: 6px;
+  right: 14px;
+  width: 14px;
+  height: 14px;
+  border: 1px solid rgba(0, 0, 0, .2);
+  border-radius: 10px;
+  background: #f1f1f1;
+  cursor: pointer;
+}
+
+.sub::after {
+  position: absolute;
+  top: -4.5px;
+  right: -4px;
+  content: "+";
+  width: 14px;
+  height: 14px;
+  font-size: 14px;
+  font-weight:bold;
+  font-family:courier;
+  color:rgb(151, 151, 151);
+}
+
+.sub.male {
+  /* background: #fdaed8; */
+}
+
+.sub.female {
+  /* background: #a4ecff; */
+}
